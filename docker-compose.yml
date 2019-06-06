@@ -26,11 +26,11 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /share/CACHEDEV1_DATA/homes/resourcespace/volumes/filestore
+      device: ${VOLUME_FILESTORE}
       o: bind
   include:
     driver: local
     driver_opts:
       type: none
-      device: /share/CACHEDEV1_DATA/homes/resourcespace/volumes/include
+      device: ${VOLUME_INCLUDE}
       o: bind
