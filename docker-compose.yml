@@ -21,7 +21,7 @@ services:
     ports:
       - 3306:3306/tcp
     volumes:
-      - ${VOLUME_MYSQL}:/var/lib/mysql
+      - mysql:/var/lib/mysql
 
 volumes:
   filestore:
@@ -36,4 +36,9 @@ volumes:
       type: none
       device: ${VOLUME_INCLUDE}
       o: bind
-
+  mysql:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${VOLUME_MYSQL}
+      o: bind
