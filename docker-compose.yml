@@ -6,7 +6,7 @@ services:
     network_mode: bridge
     tty: true
     ports:
-      - 4880:80/tcp
+      - ${HTTP_PORT}:80/tcp
     volumes:
       - include:/include
       - filestore:/filestore
