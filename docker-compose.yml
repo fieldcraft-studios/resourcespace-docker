@@ -15,6 +15,10 @@ services:
     environment:
       MYSQL_DATABASE: resourcespace
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      VIRTUAL_HOST: media.fieldcraft.com
+      VIRTUAL_PORT: ${HTTP_PORT}
+      LETSENCRYPT_HOST: media.fieldcraft.com
+      LETSENCRYPT_EMAIL: hi@fieldcraft.grwd.uk
     stdin_open: true
     network_mode: bridge
     tty: true
