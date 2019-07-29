@@ -12,10 +12,12 @@ services:
     volumes:
       - include:/include
       - filestore:/filestore
-    VIRTUAL_HOST: media.fieldcraft.com
-    VIRTUAL_PORT: ${HTTP_PORT}
-    LETSENCRYPT_HOST: media.fieldcraft.com
-    LETSENCRYPT_EMAIL: hi@fieldcraft.grwd.uk
+    environment:
+      VIRTUAL_HOST: media.fieldcraft.com
+      VIRTUAL_PORT: ${HTTP_PORT}
+      LETSENCRYPT_HOST: media.fieldcraft.com
+      LETSENCRYPT_EMAIL: hi@fieldcraft.grwd.uk
+
   mysql-resourcespace:
     image: mysql:5.6
     environment:
