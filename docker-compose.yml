@@ -13,9 +13,9 @@ services:
       - include:/include
       - filestore:/filestore
     environment:
-      VIRTUAL_HOST: media.fieldcraft.com
+      VIRTUAL_HOST: media.fieldcraftstudios.com
       VIRTUAL_PORT: ${HTTP_PORT}
-      LETSENCRYPT_HOST: media.fieldcraft.com
+      LETSENCRYPT_HOST: media.fieldcraftstudios.com
       LETSENCRYPT_EMAIL: hi@fieldcraft.grwd.uk
 
   mysql-resourcespace:
