@@ -3,7 +3,6 @@ services:
   resourcespace:
     image: creecros/resourcespace-docker:latest
     stdin_open: true
-    network_mode: bridge
     tty: true
     ports:
       - ${HTTP_PORT}:80/tcp
@@ -23,7 +22,6 @@ services:
       MYSQL_DATABASE: resourcespace
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     stdin_open: true
-    network_mode: bridge
     tty: true
     ports:
       - 3306:3306/tcp
