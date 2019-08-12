@@ -17,7 +17,6 @@ services:
       VIRTUAL_PORT: ${HTTP_PORT}
       LETSENCRYPT_HOST: media.fieldcraftstudios.com
       LETSENCRYPT_EMAIL: hi@fieldcraft.grwd.uk
-
   mysql-resourcespace:
     image: mysql:5.6
     environment:
