@@ -9,8 +9,8 @@ services:
     expose:
       - ${HTTP_PORT}
     volumes:
-      - include:/include
-      - filestore:/filestore
+      - include:/var/www/app/include
+      - filestore:/var/www/app/filestore
     environment:
       VIRTUAL_HOST: media.fieldcraftstudios.com
       VIRTUAL_PORT: 80
