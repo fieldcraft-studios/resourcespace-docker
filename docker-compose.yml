@@ -1,7 +1,7 @@
 version: '2'
 services:
   resourcespace:
-    image: creecros/resourcespace-docker:latest
+    image: creecros/resourcespace-docker:v9.0
     stdin_open: true
     tty: true
     ports:
