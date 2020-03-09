@@ -40,10 +40,11 @@ RUN mkdir /etc/service/apache2
 COPY conf/apache2.sh /etc/service/apache2/run
 RUN chmod a+x /etc/service/apache2/run
 WORKDIR /
-RUN ln -s /var/www/html/include include
-RUN ln -s /var/www/html/filestore filestore                                                                   RUN ln -s /var/lib/mysql mysql
-
-VOLUME /include                                                                                               VOLUME /filestore
+RUN ln -s /var/www/html/include include 
+RUN ln -s /var/www/html/filestore filestore                                                                   
+RUN ln -s /var/lib/mysql mysql
+VOLUME /include                                                                                               
+VOLUME /filestore
 VOLUME /mysql
 
 EXPOSE 80
