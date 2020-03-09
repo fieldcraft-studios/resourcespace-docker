@@ -1,7 +1,7 @@
 version: '2'
 services:
   resourcespace:
-    image: creecros/resourcespace-docker:v9.0
+    image: fieldcraft-studios/resourcespace-docker
     stdin_open: true
     tty: true
     ports:
